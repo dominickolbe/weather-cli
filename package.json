@@ -1,14 +1,14 @@
 {
   "name": "@dominickolbe/weather-cli",
   "description": "CLI to get the temperature from a place",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Dominic Kolbe <kolbedominic@gmail.com>",
   "homepage": "https://github.com/dominickolbe/weather-cli#readme",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/dominickolbe/weather-cli"
   },
-  "main": "index.js",
+  "main": "build/index.js",
   "license": "MIT",
   "scripts": {
     "build": "babel ./src -D -d ./build",

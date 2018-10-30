@@ -1,5 +1,5 @@
 # weather cli
-> CLI to get the temperature from a place
+> 🌞 CLI to get the temperature from a place
 
 ## Install
 
