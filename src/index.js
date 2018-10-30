@@ -35,7 +35,7 @@ const getWeatherData = async location => {
 
   spinner.succeed('Weather report:\n');
 
-  const temperature = chalk.green.bold.inverse(` ${response.temp}°C `);
+  const temperature = chalk.bgGreen.black.bold(` ${response.temp}°C `);
   const location = chalk.blue.bold(`${userInput.toLocaleUpperCase()}`);
 
   console.log(`It's ${temperature} in ${location}\n`);
