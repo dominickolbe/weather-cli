@@ -1,7 +1,8 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
+  "name": "@dominickolbe/weather-cli",
+  "version": "0.0.1",
   "author": "Dominic Kolbe <kolbedominic@gmail.com>",
+  "git": "https://github.com/dominickolbe/weather-cli",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

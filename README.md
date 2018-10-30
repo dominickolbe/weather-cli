@@ -1,6 +1,11 @@
 # weather cli
 > CLI to get the temperature from a place
 
+## Install
+
+```bash
+npm install --global @dominickolbe/weather-cli
+```
 
 ## Usage
 ```bash
