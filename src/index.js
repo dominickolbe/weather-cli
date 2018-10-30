@@ -12,9 +12,9 @@ const getWeatherData = async location => {
       params: {
         q: (`select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='${location}') and u='c'`),
         format: 'json',
-      }
+      },
     });
-    return response.data.query.results.channel.item.condition
+    return response.data.query.results.channel.item.condition;
   } catch (e) {
     return null;
   }
@@ -35,8 +35,8 @@ const getWeatherData = async location => {
 
   spinner.succeed('Weather report:\n');
 
-  const temperature = chalk.green.bold.inverse(` ${response.temp}°C `)
-  const location = chalk.blue.bold(` ${userInput.toLocaleUpperCase()} `)
+  const temperature = chalk.green.bold.inverse(` ${response.temp}°C `);
+  const location = chalk.blue.bold(`${userInput.toLocaleUpperCase()}`);
 
   console.log(`It's ${temperature} in ${location}\n`);
 
