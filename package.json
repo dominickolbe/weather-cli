@@ -1,0 +1,23 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel ./src -D -d ./build",
+    "dev": "babel-node ./src",
+    "debug": "babel-node --nolazy --inspect-brk=9229 ./src"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.1",
+    "ora": "^3.0.0",
+    "yql": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0"
+  }
+}
