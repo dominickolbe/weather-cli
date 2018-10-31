@@ -1,20 +1,24 @@
-# weather cli
-> 🌞 CLI to get the temperature from a place
+<p align="center">
+  <h2 align="center">weather cli</h2>
+  <p align="center">CLI to get the temperature from a place<p>
+  i
+</p>
 
-![alt text](screenshot.png)
+<p align="center"><img src="screenshot.png" alt="weather-cli"></p>
 
+## Installation
 
-## Install
-
+via [npm](https://www.npmjs.com/) :package:
 ```bash
 npm install --global @dominickolbe/weather-cli
 ```
 
 ## Usage
 ```bash
-$ weather-cli <place | postal code>
+$ weather-cli <place or postal code>
 
   Examples
+    $ weather-cli berlin
     $ weather-cli "New York"
     $ weather-cli 10247
 ```
