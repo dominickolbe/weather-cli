@@ -1,5 +1,5 @@
 <p align="center">
-  <h2 align="center">weather cli</h2>
+  <h3 align="center">weather cli</h3>
   <p align="center">CLI to get the temperature from a place<p>
 </p>
 
