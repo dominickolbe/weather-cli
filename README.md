@@ -1,7 +1,6 @@
 <p align="center">
   <h2 align="center">weather cli</h2>
   <p align="center">CLI to get the temperature from a place<p>
-  i
 </p>
 
 <p align="center"><img src="screenshot.png" alt="weather-cli"></p>
