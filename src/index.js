@@ -21,11 +21,9 @@ const getWeatherData = async location => {
 }
 
 (async () => {
-
-  const userInput = process.argv[2];
-
   spinner.start();
 
+  const userInput = process.argv[2];
   const response = await getWeatherData(userInput);
 
   if (!response) {
@@ -39,5 +37,4 @@ const getWeatherData = async location => {
   const location = chalk.blue.bold(`${userInput.toLocaleUpperCase()}`);
 
   console.log(`It's ${temperature} in ${location}\n`);
-
 })();

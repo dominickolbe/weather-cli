@@ -2,7 +2,7 @@
   <p align="center">:sunny: :cloud: :zap:</p>
   <h3 align="center">weather cli</h3>
   <h3 align="center">weather cli</h3>
-  <p align="center">CLI to get the temperature from a place<p>
+  <p align="center">CLI to get weather information from a place<p>
 </p>
 
 <p align="center"><img src="screenshot.png" alt="weather-cli"></p>
@@ -25,5 +25,6 @@ $ weather-cli <place or postal code>
 ```
 
 ### License
+MIT License
 
-MIT
+Copyright (c) 2018 [Dominic Kolbe](https://dominickolbe.dk)

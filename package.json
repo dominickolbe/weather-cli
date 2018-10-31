@@ -1,6 +1,6 @@
 {
   "name": "@dominickolbe/weather-cli",
-  "description": "CLI to get the temperature from a place",
+  "description": "CLI to get weather information from a place",
   "version": "0.0.10",
   "author": "Dominic Kolbe <kolbedominic@gmail.com>",
   "homepage": "https://github.com/dominickolbe/weather-cli#readme",
