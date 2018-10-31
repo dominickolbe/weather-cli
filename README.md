@@ -5,7 +5,7 @@
   <p align="center">CLI to get weather information from a place<p>
 </p>
 
-<p align="center"><img src="screenshot.png" alt="weather-cli"></p>
+<p align="center"><img src="cli.svg" alt="weather-cli"></p>
 
 ## Installation
 
