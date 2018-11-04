@@ -6,6 +6,11 @@
 
 <p align="center"><img src="cli.svg" alt="weather-cli"></p>
 
+## without Installation
+```bash
+npx @dominickolbe/weather-cli Berlin
+```
+
 ## Installation
 
 via [npm](https://www.npmjs.com/) :package:
