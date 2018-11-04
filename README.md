@@ -1,7 +1,7 @@
 <p align="center">
   <p align="center">:sunny: :cloud: :zap:</p>
   <h3 align="center">weather cli</h3>
-  <p align="center">CLI to get weather information from a place<p>
+  <p align="center">CLI to get weather information for a place<p>
 </p>
 
 <p align="center"><img src="cli.svg" alt="weather-cli"></p>
