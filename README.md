@@ -13,7 +13,7 @@ npx @dominickolbe/weather-cli Berlin
 
 ## Installation
 
-via [npm](https://www.npmjs.com/) :package:
+via [npm](https://www.npmjs.com/package/@dominickolbe/weather-cli) :package:
 ```bash
 npm install --global @dominickolbe/weather-cli
 ```
