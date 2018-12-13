@@ -18,6 +18,11 @@ via [npm](https://www.npmjs.com/package/@dominickolbe/weather-cli) :package:
 npm install --global @dominickolbe/weather-cli
 ```
 
+via yarn :package:
+```bash
+yarn global add @dominickolbe/weather-cli
+```
+
 ## Usage
 ```bash
 $ weather-cli <place or postal code>
