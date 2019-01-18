@@ -1,20 +1,26 @@
 #!/usr/bin/env node
 
+require('dotenv').config();
+
 import axios from 'axios';
 import ora from 'ora';
 import chalk from 'chalk';
 
 const spinner = ora('Loading ...');
+const API_BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
 
-const getWeatherData = async location => {
+const getWeatherData = async query => {
   try {
-    const response = await axios.get('https://query.yahooapis.com/v1/public/yql', {
+    const { data } = await axios.get(API_BASE_URL, {
       params: {
-        q: (`select item.condition from weather.forecast where woeid in (select woeid from geo.places(1) where text='${location}') and u='c'`),
-        format: 'json',
+        q: query,
+        APPID: process.env.API_KEY,
       },
     });
-    return response.data.query.results.channel.item.condition;
+    return {
+      location: data.name,
+      temp: data.main.temp - 273.15,
+    };
   } catch (e) {
     return null;
   }
@@ -23,7 +29,7 @@ const getWeatherData = async location => {
 (async () => {
   spinner.start();
 
-  const userInput = process.argv[2];
+  const userInput = process.argv[2] || 'berlin';
   const response = await getWeatherData(userInput);
 
   if (!response) {
@@ -34,7 +40,7 @@ const getWeatherData = async location => {
   spinner.succeed('Weather report:\n');
 
   const temperature = chalk.bgGreen.black.bold(` ${response.temp}°C `);
-  const location = chalk.blue.bold(`${userInput.toLocaleUpperCase()}`);
+  const location = chalk.blue.bold(`${response.location}`);
 
   console.log(`It's ${temperature} in ${location}\n`);
 })();
