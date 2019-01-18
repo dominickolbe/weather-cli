@@ -19,7 +19,7 @@ const getWeatherData = async query => {
     });
     return {
       location: data.name,
-      temp: data.main.temp - 273.15,
+      temp: (data.main.temp - 273.15).toFixed(1),
     };
   } catch (e) {
     return null;
@@ -29,7 +29,7 @@ const getWeatherData = async query => {
 (async () => {
   spinner.start();
 
-  const userInput = process.argv[2] || 'berlin';
+  const userInput = process.argv[2];
   const response = await getWeatherData(userInput);
 
   if (!response) {
