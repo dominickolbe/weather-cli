@@ -6,31 +6,19 @@
 
 <p align="center"><img src="https://cdn.jsdelivr.net/npm/@dominickolbe/weather-cli/cli.svg" alt="weather-cli"></p>
 
-## without Installation
+## use it without Installation
 ```bash
 npx @dominickolbe/weather-cli Berlin
 ```
 
-## Installation
-
-via [npm](https://www.npmjs.com/package/@dominickolbe/weather-cli) :package:
-```bash
-npm install --global @dominickolbe/weather-cli
-```
-
-via yarn :package:
-```bash
-yarn global add @dominickolbe/weather-cli
-```
-
 ## Usage
 ```bash
-$ weather-cli <place or postal code>
+$ npx @dominickolbe/weather-cli <place or postal code>
 
   Examples
-    $ weather-cli berlin
-    $ weather-cli "New York"
-    $ weather-cli 10247
+    $ npx @dominickolbe/weather-cli berlin
+    $ npx @dominickolbe/weather-cli "New York"
+    $ npx @dominickolbe/weather-cli 10247
 ```
 
 ### License
