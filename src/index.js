@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 
-require('dotenv').config();
-
 import axios from 'axios';
 import ora from 'ora';
 import chalk from 'chalk';
 
 const spinner = ora('Loading ...');
+const API_KEY = '2e1cad22f4e858b53ebb289a64d85459';
 const API_BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
 
 const getWeatherData = async query => {
@@ -14,7 +13,7 @@ const getWeatherData = async query => {
     const { data } = await axios.get(API_BASE_URL, {
       params: {
         q: query,
-        APPID: process.env.API_KEY,
+        APPID: API_KEY,
       },
     });
     return {
