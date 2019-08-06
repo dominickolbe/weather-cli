@@ -24,4 +24,4 @@ $ npx @dominickolbe/weather-cli <place or postal code>
 ### License
 MIT License
 
-Copyright (c) 2018 [Dominic Kolbe](https://dominickolbe.dk)
+Copyright (c) 2019 [Dominic Kolbe](https://dominickolbe.dk)
