@@ -7,11 +7,13 @@
 <p align="center"><img src="https://cdn.jsdelivr.net/npm/@dominickolbe/weather-cli/cli.svg" alt="weather-cli"></p>
 
 ## use it without Installation
+
 ```bash
 npx @dominickolbe/weather-cli Berlin
 ```
 
 ## Usage
+
 ```bash
 $ npx @dominickolbe/weather-cli <place or postal code>
 
@@ -22,6 +24,7 @@ $ npx @dominickolbe/weather-cli <place or postal code>
 ```
 
 ### License
+
 MIT License
 
-Copyright (c) 2019 [Dominic Kolbe](https://dominickolbe.dk)
+Copyright (c) 2019-2020 [Dominic Kolbe](https://dominickolbe.dk)
