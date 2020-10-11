@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import axios from "axios";
-import ora from "ora";
 import chalk from "chalk";
+import ora from "ora";
 
 const spinner = ora("Loading ...");
 const API_KEY = "2e1cad22f4e858b53ebb289a64d85459";
@@ -39,7 +39,9 @@ const getWeatherData = async (query) => {
 
   spinner.succeed("Weather report:\n");
 
-  const temperature = chalk.bgGreen.black.bold(` ${response.temp}°C `);
+  const temperature = chalk.bgGreen.black.bold(
+    ` ${response.temp.toFixed()}°C `
+  );
   const location = chalk.blue.bold(`${response.location}`);
 
   console.log(`It's ${temperature} in ${location}\n`);
