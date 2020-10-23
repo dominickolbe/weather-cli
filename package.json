@@ -20,7 +20,7 @@
     "release": "yarn && yarn build && yarn publish"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "chalk": "^4.1.0",
     "dotenv": "^8.2.0",
     "ora": "^5.1.0"
