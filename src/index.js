@@ -5,7 +5,7 @@ import chalk from "chalk";
 import ora from "ora";
 
 const spinner = ora("Loading ...");
-const API_KEY = "2e1cad22f4e858b53ebb289a64d85459";
+const API_KEY = "be5f5b46d2ead9b77e35d1302c229266";
 const API_BASE_URL = "http://api.openweathermap.org/data/2.5/weather";
 
 const getWeatherData = async (query) => {
